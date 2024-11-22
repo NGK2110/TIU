@@ -18,9 +18,11 @@ Make sure you have the following installed on your system:
    cd <repository-folder>
 
 2. Create a new conda environment using the provided environment.yml file:
+   ```bash
    conda env create -f environment.yml
 
 3. Activate the newly created environment:
+   ```bash
    conda activate finetune
 
 4. 
