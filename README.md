@@ -45,35 +45,35 @@ The script `finetuning_individual_CLIP.py` is used for fine-tuning an individual
 4. **Additional Arguments**:
    - Other arguments are explained in detail in the script. Refer to the comments in the code for more information.
 
-   ---
+---
    
-   ### Command to Run the Script
-   
-   Use the following command to execute the script:
-   
-   ```bash
-   accelerate launch finetuning_individual_CLIP.py \
-     --pretrained_model_name_or_path="<path_to_unlearned_model>" \
-     --train_data_dir="<path_to_train_data>" \
-     --caption_column="prompt" \
-     --use_ema \
-     --resolution=512 \
-     --center_crop \
-     --random_flip \
-     --gradient_checkpointing \
-     --mixed_precision="fp16" \
-     --learning_rate=1e-05 \
-     --max_grad_norm=1 \
-     --lr_scheduler="constant" \
-     --lr_warmup_steps=0 \
-     --train_batch_size=10 \
-     --gradient_accumulation_steps=1 \
-     --curriculum="50,100,150,200,250,300,350,400,450,500" \
-     --clip_threshold=0.31 \
-     --validation_prompts="<path_to_validation_prompts_txt>" \
-     --log_file="<path_to_log_file>" \
-     --save_model=True \
-     --output_dir="<path_to_output_dir>"
+### Command to Run the Script
+
+Use the following command to execute the script:
+
+```bash
+accelerate launch finetuning_individual_CLIP.py \
+  --pretrained_model_name_or_path="<path_to_unlearned_model>" \
+  --train_data_dir="<path_to_train_data>" \
+  --caption_column="prompt" \
+  --use_ema \
+  --resolution=512 \
+  --center_crop \
+  --random_flip \
+  --gradient_checkpointing \
+  --mixed_precision="fp16" \
+  --learning_rate=1e-05 \
+  --max_grad_norm=1 \
+  --lr_scheduler="constant" \
+  --lr_warmup_steps=0 \
+  --train_batch_size=10 \
+  --gradient_accumulation_steps=1 \
+  --curriculum="50,100,150,200,250,300,350,400,450,500" \
+  --clip_threshold=0.31 \
+  --validation_prompts="<path_to_validation_prompts_txt>" \
+  --log_file="<path_to_log_file>" \
+  --save_model=True \
+  --output_dir="<path_to_output_dir>"
 
 ## Running Fine-Tuning Scripts
 
