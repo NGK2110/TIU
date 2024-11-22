@@ -13,6 +13,7 @@ Make sure you have the following installed on your system:
 ### Installation
 
 1. Clone the repository:
+   ```bash
    git clone <repository-url>
    cd <repository-folder>
 
