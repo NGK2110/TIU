@@ -1,4 +1,4 @@
-# TIU
+# The Illusion of Unlearning: The Unstable Nature of Machine Unlearning in Text-to-Image Diffusion Models (Accepted in CVPR 2025)
 
 ## Getting Started
 
