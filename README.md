@@ -122,3 +122,18 @@ accelerate launch finetuning_sequential.py \
   --clip_threshold=0.31 \
   --bc_threshold=0.3 \
   --validation_prompts="<path_to_validation_prompts_txt>"
+```
+
+## Citation
+To cite our work you can use the following:
+```
+@inproceedings{Naveen2025Illusion,
+  title     = {The Illusion of Unlearning: The Unstable Nature of Machine Unlearning in Text-to-Image Diffusion Models},
+  author    = {Naveen George, Karthik Nandan Dasaraju , Rutheesh Reddy Chittepu, Konda Reddy Mopuri},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {July}
+  year      = {2025}
+}
+
+
+```
