@@ -85,13 +85,9 @@ This script is similar to `finetuning_individual_CLIP.py`, except that it uses a
 The arguments used are similar to `finetuning_individual_CLIP.py`, with the following modification:
 - Replace `--clip_threshold` with `--bc_threshold=0.3`.
 
----
-
 ### `finetuning_sequential.py`
 
 This script allows fine-tuning with both constraints (CLIP and classifier) applied sequentially. Using this script, you can determine the **Revival Point** (discussed in the paper). Tables 7 and 8 in the supplementary material were generated using this code.
-
----
 
 ### Command to Run `finetuning_sequential.py`
 
@@ -125,7 +121,9 @@ accelerate launch finetuning_sequential.py \
   --validation_prompts="<path_to_validation_prompts_txt>"
 ```
 
-### Command to run the Evaluation script -
+---
+
+## Evaluation script -
 
 ```bash
 python eval_model.py \
@@ -136,6 +134,8 @@ python eval_model.py \
   --theme="" \    # No need of this argument for objects/celebrity. In case of style just --theme. In Nudity --theme="Nudity".
   --gpu <GPU_ID>
 ```
+
+---
 
 ## Citation
 To cite our work you can use the following:
