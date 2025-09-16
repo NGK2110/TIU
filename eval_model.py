@@ -33,7 +33,6 @@ def main():
     parser.add_argument('concept', type=str, default=None, help='The concept to generate prompts about.')
     parser.add_argument('--curr', action='store_true', help='If present, process curriculum subfolders inside model paths.')
     parser.add_argument('--prompt_file', type=str, default=None, help='Path to a file containing prompts to use instead of generating them.')
-    parser.add_argument('--unlearn', action='store_true', help='Check whether evaluating for unlearned mmodel.')
     parser.add_argument('--theme', type=str, default=None, help='The theme/style of the prompts to unlearn.')
     parser.add_argument('--gpu', type=int, default=0, help='The GPU device to use.')
     args = parser.parse_args()
