@@ -140,12 +140,12 @@ python eval_model.py \
 ## Citation
 To cite our work you can use the following:
 ```
-@inproceedings{Naveen2025Illusion,
-  title     = {The Illusion of Unlearning: The Unstable Nature of Machine Unlearning in Text-to-Image Diffusion Models},
-  author    = {Naveen George, Karthik Nandan Dasaraju , Rutheesh Reddy Chittepu, Konda Reddy Mopuri},
-  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  month     = {July}
-  year      = {2025}
+@inproceedings{george2025illusion,
+  title={The Illusion of Unlearning: The Unstable Nature of Machine Unlearning in Text-to-Image Diffusion Models},
+  author={George, Naveen and Dasaraju, Karthik Nandan and Chittepu, Rutheesh Reddy and Mopuri, Konda Reddy},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={13393--13402},
+  year={2025}
 }
 
 
